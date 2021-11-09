@@ -1,6 +1,6 @@
 import logoImg from '../../assets/images/Logo/Com_efeito/dragon-logo10.png';
 
-import "./styles.css"
+import './styles.css'
 
 export function Landing() {
   return (

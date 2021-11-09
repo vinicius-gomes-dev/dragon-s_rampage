@@ -1,0 +1,63 @@
+#page-dragons {
+  width: 100vw;
+  height: 100vh;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.buttons-container a {
+  width: 22rem;
+  height: 4.2rem;
+  border-radius: 0.6rem;
+
+  font-size: 1.4rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-decoration: none;
+}
+
+.add-dragon {
+  background: var(--color-red);
+  color: var(--color-black);
+  transition: 0.3s;
+}
+
+.add-dragon:hover {
+  filter: brightness(0.7);
+}
+
+.dragons-list article {
+  border: 0.2rem solid var(--color-red);
+  border-radius: 0.6rem;
+  margin: 1.0rem 0.5rem;
+  padding: 0.2rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dragon-data {
+  font-size: 1.3rem;
+  margin-left: 1rem;
+}
+
+.dragon-data > :first-child {
+  margin-right: 0.7rem;
+}
+
+.dragon-function {
+  font-size: 1rem;
+  margin-right: 1rem;
+}
+
+.dragon-function > :first-child {
+  margin-right: 0.7rem;
+}
