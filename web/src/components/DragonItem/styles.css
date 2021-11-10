@@ -1,0 +1,48 @@
+.dragon-item {
+  border: 0.2rem solid var(--color-red);
+  border-radius: 0.6rem;
+  margin: 1.0rem 0.5rem;
+  padding: 0.2rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dragon-data {
+  font-size: 1.3rem;
+  margin-left: 1rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.dragon-data .dragon-name,
+.dragon-data .dragon-type {
+  margin-right: 0.7rem;
+  white-space: nowrap;
+  width: 12rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* .dragon-data .dragon-name */
+
+.dragon-type .dragon-type-img {
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 4.2rem;
+}
+
+.dragon-function {
+  font-size: 1rem;
+  margin-right: 1rem;
+}
+
+.dragon-function > :first-child {
+  margin-right: 2.7rem;
+}
