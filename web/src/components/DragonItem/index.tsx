@@ -20,6 +20,9 @@ export const DragonItem: React.FC<DragonItemProps> = ({ dragon }) => {
 
   const containURL = "https://savegnago.vteximg.com.br/arquivos/ids/";
   const isAImage = dragon.type.includes(containURL);
+  function teste() {
+    console.log("Dragon ID: ", dragon.id);
+  }
 
   return (
     <article className="dragon-item">
@@ -29,15 +32,15 @@ export const DragonItem: React.FC<DragonItemProps> = ({ dragon }) => {
         </div>
         <div className="dragon-type">
           {/* <span>({dragon.type})</span> */}
-          {(containURL)
+          {(isAImage)
             ? <img className="dragon-type-img" src={dragon.type} alt="type" />
-            : <span>(Não é URL)</span>}
+            : <span>({dragon.type})</span>}
         </div>
       </div>
 
       <div className="dragon-function">
-        <span>Remover</span>
-        <span>Alterar</span>
+        <button type="submit" onClick={teste}>Remover</button>
+        <button type="button" onClick={teste}>Alterar</button>
       </div>
     </article>
 
