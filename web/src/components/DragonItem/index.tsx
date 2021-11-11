@@ -39,7 +39,7 @@ export const DragonItem: React.FC<DragonItemProps> = ({ dragon }) => {
       </div>
 
       <div className="dragon-function">
-        <button type="submit" onClick={teste}>Remover</button>
+        <button type="button" onClick={teste}>Remover</button>
         <button type="button" onClick={teste}>Alterar</button>
       </div>
     </article>

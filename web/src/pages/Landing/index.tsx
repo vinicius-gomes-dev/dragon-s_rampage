@@ -1,4 +1,4 @@
-import logoImg from '../../assets/images/Logo/Com_efeito/dragon-logo10.png';
+import logoImg from '../../assets/images/Logo/Simples/dragon-logo1.png';
 
 import './styles.css'
 
