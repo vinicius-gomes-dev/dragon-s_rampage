@@ -21,7 +21,7 @@ export const DragonItem: React.FC<DragonItemProps> = ({ dragon }) => {
   const containURL = "https://savegnago.vteximg.com.br/arquivos/ids/";
   const isAImage = dragon.type.includes(containURL);
   function teste() {
-    console.log("Dragon ID: ", dragon.id);
+    alert("Dragon ID: " + dragon.id);
   }
 
   return (

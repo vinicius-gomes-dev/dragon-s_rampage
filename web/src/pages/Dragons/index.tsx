@@ -12,13 +12,16 @@ export function Dragons() {
 
 
   useEffect(() => {
-    api.get('dragon/').then(response => {
+    api.get('dragon').then(response => {
       console.log("Dragons => ", response.data);
       setDragons(response.data);
       console.log("getDragons =>", getDragons);
     })
   }, []);
 
+  function teste() {
+    alert("ADD dragon");
+  }
 
 
   return (
@@ -26,7 +29,7 @@ export function Dragons() {
       <PageHeader title="Dragões" />
       <main className="dragons-list">
         <div className="buttons-container">
-          <a href="" className="add-dragon">
+          <a href="" className="add-dragon" onClick={teste}>
             + Adicionar dragão
           </a>
         </div>
