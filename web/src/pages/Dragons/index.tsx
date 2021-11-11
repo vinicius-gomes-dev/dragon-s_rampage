@@ -1,4 +1,6 @@
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
+
 import { Dragon, DragonItem } from '../../components/DragonItem';
 import { PageHeader } from '../../components/PageHeader';
 import { api } from '../../services/api';
@@ -29,9 +31,9 @@ export function Dragons() {
       <PageHeader title="Dragões" />
       <main className="dragons-list">
         <div className="buttons-container">
-          <a href="" className="add-dragon" onClick={teste}>
+          <Link to="/dragons/register" className="add-dragon">
             + Adicionar dragão
-          </a>
+          </Link>
         </div>
 
         {getDragons.map((dragon: Dragon) => {
