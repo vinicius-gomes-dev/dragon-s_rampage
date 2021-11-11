@@ -12,7 +12,7 @@ export function Dragons() {
 
 
   useEffect(() => {
-    api.get('dragon').then(response => {
+    api.get('dragon/').then(response => {
       console.log("Dragons => ", response.data);
       setDragons(response.data);
       console.log("getDragons =>", getDragons);
